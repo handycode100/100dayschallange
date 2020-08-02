@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Font Color Switcher</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="all">
+		<div class="main">
+			<h1>Font Color Switcher</h1>
+			<h3>Click for Change to Your Favorite</h3>
+		</div>
+
+		<div class="choose">
+			<div class="colors active">
+				<div class="theme">
+					<ul class="theme-colors">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<span class="theme-btn active">
+				<i class="fa fa-cog fa-lg fa-spin"></i>
+			</span>
+		</div>	
+
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript">
+				
+		$(document).ready(function(){
+	
+			$('span').click(function(){
+				$('.colors, span').toggleClass('active');
+			});
+
+			$('ul.theme-colors li').click(function(){
+				$('body').css('background', $(this).css('color'));
+			});
+
+		});
+		
+
+	</script>
+</body>
+</html>
