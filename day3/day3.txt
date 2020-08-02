@@ -1,0 +1,11 @@
+its just for making the sublime text more effective, like bracket, dreamweaver, or vscode
+
+on sublime
+
+1. ctrl+shift+p
+2. package control: install package
+3. browser sync
+4. wait until installation complete
+5. restart your sublime
+6. there will be new sub menu called 'Browser Sync', (left of 'Help')
+7. Click launch
